@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "functions": {
+    "pages/api/generate-pdf.js": {
+      "maxDuration": 60
+    }
+  },
+  "env": {
+    "CHROME_EXECUTABLE_PATH": "",
+    "NODE_ENV": "production"
+  }
+}
